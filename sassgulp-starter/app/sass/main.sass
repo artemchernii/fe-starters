@@ -1,0 +1,63 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+
+@keyframes bouncing-loader
+  to
+    opacity: 0.1
+    transform: translate3d(0, -16px, 0)
+
+.bouncing-loader
+    position: absolute
+    top: 20px
+    left: 20px
+    display: flex
+    justify-content: center
+
+    > div
+        width: 36px
+        height: 36px
+        margin: 3rem 0.2rem
+        background: #fff
+        border-radius: 50%
+        animation: bouncing-loader 0.6s infinite alternate
+
+    &:nth-child(2)
+        animation-delay: 0.2s
+
+    &:nth-child(3)
+        animation-delay: 0.4s
+
+.box
+    color: #fff
+    font-weight: bold
+    background-color: rgba(255, 255, 255, 0.3)
+    border-radius: 5px
+    font-family: sans-serif
+    text-align: center
+    line-height: 1
+    -webkit-backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px)
+    max-width: 50%
+    max-height: 50%
+    padding: 20px 40px
+
+body
+
+    background-image: url(https://picsum.photos/id/1080/6858/4574), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172))
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+.container
+    align-items: center
+    display: flex
+    justify-content: center
+    height: 100%
+    width: 100%
+
+@import "media" // Всегда в конце
