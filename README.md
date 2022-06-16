@@ -14,4 +14,4 @@
   <li>Gulp</li>
 </ul>
 
-<p>Автор сборки: <a href="https://webdesign-master.ru" target="_blank">https://webdesign-master.ru</a></p>
+<p>Author: <a href="https://webdesign-master.ru" target="_blank">https://webdesign-master.ru</a></p>
