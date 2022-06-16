@@ -1,3 +1,4 @@
+@import "vars"
 *
 	box-sizing: border-box
 	&:before, &:after
@@ -5,6 +6,10 @@
 
 html, body
 	height: 100%
+
+::selection 
+	background-color: $accent
+	color: #fff
 
 body
 	font-size: 16px
